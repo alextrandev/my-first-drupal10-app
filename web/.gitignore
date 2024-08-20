@@ -56,3 +56,4 @@ libraries
 modules/contrib
 profiles/contrib
 themes/contrib
+/example.gitignore
