@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef1e23b615f8787230cace722f220837",
+    "content-hash": "7e20bdda993891a877efcbdee7cc0b6a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1866,6 +1866,94 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/ruhi",
+            "version": "11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ruhi.git",
+                "reference": "11.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ruhi-11.0.0.zip",
+                "reference": "11.0.0",
+                "shasum": "e03ac19c7023c61b70cc110406304fe414216031"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "11.0.0",
+                    "datestamp": "1723869508",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ravis",
+                    "homepage": "https://www.drupal.org/user/79351"
+                }
+            ],
+            "description": "Ruhi is a multi-purpose Drupal 8, 9, 10, 11 theme by <a href=\"https://drupar.com/\" target=\"_blank\">Drupar.com</a>",
+            "homepage": "https://www.drupal.org/project/ruhi",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ruhi"
+            }
+        },
+        {
+            "name": "drupal/thex",
+            "version": "11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/thex.git",
+                "reference": "11.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/thex-11.0.0.zip",
+                "reference": "11.0.0",
+                "shasum": "7f1bcee36306d3b5e23cfe6be66612f2bf9fd0e3"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "11.0.0",
+                    "datestamp": "1723617140",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ravis",
+                    "homepage": "https://www.drupal.org/user/79351"
+                }
+            ],
+            "description": "<p>A clean, light weight and mobile optimized base theme for Drupal 9, 10 and 11 by <a href=\"https://drupar.com/\" target=\"_blank\">Drupar.com</a><br /><a href=\"https://drupar.com/theme/thex\" target=\"_blank\">Theme Page</a> | <a href=\"https://drupar.com/doc/thex\" target=\"_blank\">Theme User Guide</a> | <a href=\"https://www.drupal.org/project/thex\" target=\"_blank\">Project Page</a></p>",
+            "homepage": "https://www.drupal.org/project/thex",
+            "support": {
+                "source": "https://git.drupalcode.org/project/thex"
             }
         },
         {
