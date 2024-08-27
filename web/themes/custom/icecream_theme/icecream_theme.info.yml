@@ -1,0 +1,7 @@
+name: icecream
+type: theme
+description: a simple ice cream custom theme
+base theme: olivero
+core_version_requirement: ^10 || ^11
+libraries:
+  - icecream_theme/global
