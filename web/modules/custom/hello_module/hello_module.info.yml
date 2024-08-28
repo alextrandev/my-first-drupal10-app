@@ -1,0 +1,4 @@
+type: module
+name: Hello module
+description: "A simple hello module"
+core_version_requirement: "^10 || ^11 || ^12"
