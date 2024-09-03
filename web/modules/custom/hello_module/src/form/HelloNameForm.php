@@ -16,7 +16,13 @@ class HelloNameForm extends FormBase
   {
     $form['name'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('your name'),
+      '#title' => $this->t('Your name'),
+      '#required' => TRUE,
+    ];
+
+    $form['pwd'] = [
+      '#type' => 'password',
+      '#title' => $this->t('Password'),
       '#required' => TRUE,
     ];
 
@@ -31,7 +37,7 @@ class HelloNameForm extends FormBase
   public function submitForm(array &$form, FormStateInterface $form_state)
   {
     $name = $form_state->getValue('name');
-    \Drupal::messenger()->addMessage($this->t('Hello, @name!', ['@name' => $name]));
+    \Drupal::messenger()->addMessage($this->t('Login successfully as @name!', ['@name' => $name]));
     $form_state->setRedirect('hello_module.greeting', ['user' => $name]);
   }
 }

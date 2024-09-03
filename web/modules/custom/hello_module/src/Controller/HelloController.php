@@ -8,11 +8,11 @@ use Drupal\Core\Url;
 
 class HelloController extends ControllerBase
 {
-  public function hi()
+  public function landing()
   {
     $url = Url::fromRoute('hello_module.form');
-    $link = Link::fromTextAndUrl($this->t('Go to the form'), $url)->toString();
-    return ['#markup' => $this->t('Hello, @user! @link', [
+    $link = Link::fromTextAndUrl($this->t('Click to login'), $url)->toString();
+    return ['#markup' => $this->t('Welcome, guest! @link', [
       '@link' => $link,
     ])];
   }

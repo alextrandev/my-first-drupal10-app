@@ -1,8 +1,8 @@
 hello_module.page:
   path: "/hello"
   defaults:
-    _controller: 'Drupal\hello_module\Controller\HelloController::hi'
-    _title: "Hello"
+    _controller: 'Drupal\hello_module\Controller\HelloController::landing'
+    _title: "Welcome"
   requirements:
     _permission: "access content"
 
@@ -10,7 +10,7 @@ hello_module.form:
   path: "/hello-form"
   defaults:
     _form: 'Drupal\hello_module\Form\HelloNameForm'
-    _title: "Hello form"
+    _title: "Login"
   requirements:
     _permission: "access content"
 
@@ -18,6 +18,6 @@ hello_module.greeting:
   path: "/greeting/{user}"
   defaults:
     _controller: 'Drupal\hello_module\Controller\HelloController::greeting'
-    _title: "Hello user"
+    _title: "Dashboard"
   requirements:
     _permission: "access content"
