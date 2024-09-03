@@ -1,7 +1,15 @@
-first_module.page:
+hello_module.page:
   path: "/hello"
   defaults:
     _controller: 'Drupal\hello_module\Controller\HelloController::hi'
-    _title: "Hello module"
+    _title: "Hello"
+  requirements:
+    _permission: "access content"
+
+hello_module.form:
+  path: "/hello-form"
+  defaults:
+    _form: 'Drupal\hello_module\Form\HelloNameForm'
+    _title: "Hello form"
   requirements:
     _permission: "access content"
