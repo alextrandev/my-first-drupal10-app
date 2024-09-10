@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * implements hook_form_alter()
+ */
+
+function first_module_form_alter(&$form, FormStateInterFace $form_state, $form_id)
+{
+  if ($form_id = 'user_login_form') {
+    // form title header
+    $form['#title'] = t('Login with Company info');
+    // form username field
+    $form['name']['#title'] = t('Company username');
+    $form['name']['#attributes']['placeholder'] = t('Company username');
+    // form password field
+    $form['pass']['#title'] = t('Company password');
+    $form['pass']['#attributes']['placeholder'] = t('Company password');
+  }
+};
