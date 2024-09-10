@@ -5,10 +5,14 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
- * implements hook_form_alter()
+ * Form alter module
+ *
+ * @param [type] $form
+ * @param FormStateInterFace $form_state
+ * @param [type] $form_id
+ * @return void
  */
-
-function first_module_form_alter(&$form, FormStateInterFace $form_state, $form_id)
+function first_module_form_alter(&$form, FormStateInterface $form_state, $form_id)
 {
   if ($form_id = 'user_login_form') {
     // form title header
@@ -21,3 +25,33 @@ function first_module_form_alter(&$form, FormStateInterFace $form_state, $form_i
     $form['pass']['#attributes']['placeholder'] = t('Company password');
   }
 };
+
+/**
+ * Hook to pass variable form module to theme
+ *
+ * @param [type] $variables
+ * @return void
+ */
+function first_module_preprocess_page(&$variables) {
+  $variables['first_module_variables'] = 'My first D11 site';
+};
+
+/**
+ * help hook for the first module
+ *
+ * @param [type] $route_name
+ * @param RouteMatchInterface $route_match
+ * @return void
+ */
+function first_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page':
+     $output = <<<HTML
+        <h3>About</h3>
+        <p>This is help for first module</p>
+      HTML;
+      return $output;
+
+    default:
+  }
+}
