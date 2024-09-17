@@ -1,0 +1,6 @@
+name: React list module
+description: "A react component that display a list of items from Drupal"
+type: module
+core_version_requirement: "^10 || ^11 || ^12"
+dependencies:
+  - drupal:node
