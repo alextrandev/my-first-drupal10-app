@@ -1,8 +1,7 @@
 react_list.page:
   path: "/react-list"
   defaults:
-    # to do: update controller
-    _controller: 'Drupal\'
+    _controller: 'Drupal\react_list\Controller'
     _title: "React list"
   requirements:
     _permission: "access content"
