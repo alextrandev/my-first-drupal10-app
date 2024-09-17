@@ -5,7 +5,7 @@ namespace Drupal\react_list\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * React list controller class
+ * React list controller
  */
 class ReactListController extends ControllerBase
 {
