@@ -1,0 +1,8 @@
+name: React Theme
+description: "A simple react app as Drupal theme"
+type: theme
+base theme: olivero
+core_version_requirement: ^9 || ^10 || ^11
+
+libraries:
+  - react_hello/react_app
