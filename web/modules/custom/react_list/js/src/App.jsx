@@ -12,12 +12,26 @@ export default function App() {
 
   return (
     <div>
-      <h1>Articles list</h1>
-      <ul>
+      <h2>Articles list</h2>
+      <ul style={{ listStyleType: 'none', padding: 0 }}>
         {nodes.map(node => (
-          <li key={node.id}>{node.attributes.title}</li>
+          <li
+            key={node.id}
+            style={{
+              border: '1px solid #ccc',
+              borderRadius: '5px',
+              padding: '10px',
+              marginBottom: '10px',
+            }}
+          >
+            <div>Title: {node.attributes.title}</div>
+            <div>
+              Created: {new Date(node.attributes.created).toLocaleString()}
+            </div>
+            <div>Body: {node.attributes.body.value.slice(0, 250)}...</div>
+          </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
