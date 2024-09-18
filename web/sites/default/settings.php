@@ -902,5 +902,10 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
+
+// site config path
 // $settings['config_sync_directory'] = 'sites/default/files/config_gKaHhqeqBwsXdxwM3Wvtv30utbV7c3vWPSzxpw9ZC3gwNM2RUuF68Dck0zxofZpACKXlRXpAMw/sync';
 $settings['config_sync_directory'] = './config/global';
+
+// ignored module on export
+$settings['config_exclude_modules'] = ['devel', 'webprofiler'];

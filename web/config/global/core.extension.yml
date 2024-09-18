@@ -14,7 +14,6 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
-  devel: 0
   devel_generate: 0
   dxpr_builder_block: 0
   dxpr_builder_page: 0
@@ -54,7 +53,6 @@ module:
   update: 0
   user: 0
   views_ui: 0
-  webprofiler: 0
   views: 10
   dxpr_builder: 100
   standard: 1000

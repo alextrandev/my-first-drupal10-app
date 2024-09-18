@@ -4,7 +4,7 @@ langcode: en
 uuid: e582ac6c-194e-4403-880c-b3d9b03e99ba
 name: 'My first Drupal site'
 mail: admin@example.com
-slogan: ''
+slogan: 'Awesome platform'
 page:
   403: ''
   404: ''
