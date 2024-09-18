@@ -1,0 +1,25 @@
+uuid: fcd725fd-bd4b-4d14-a98c-3347ed5fb973
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8f170d68-00cd-4afd-9ae1-fac37212052a'
+  module:
+    - block_content
+  theme:
+    - icecream_theme
+id: icecream_theme_drupalisfun
+theme: icecream_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:8f170d68-00cd-4afd-9ae1-fac37212052a'
+settings:
+  id: 'block_content:8f170d68-00cd-4afd-9ae1-fac37212052a'
+  label: 'Drupal is fun'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

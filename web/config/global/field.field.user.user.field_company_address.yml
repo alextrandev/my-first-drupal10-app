@@ -1,0 +1,20 @@
+uuid: 64b34962-f682-4c74-8a9c-b2095014f525
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_company_address
+  module:
+    - user
+id: user.user.field_company_address
+field_name: field_company_address
+entity_type: user
+bundle: user
+label: 'Company address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

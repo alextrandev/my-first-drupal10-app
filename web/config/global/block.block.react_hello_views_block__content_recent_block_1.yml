@@ -1,0 +1,24 @@
+uuid: cde84da8-11a8-4fe1-80b8-9b56ad4e88cb
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - views
+  theme:
+    - react_hello
+id: react_hello_views_block__content_recent_block_1
+theme: react_hello
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

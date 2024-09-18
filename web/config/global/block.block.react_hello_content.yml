@@ -1,0 +1,22 @@
+uuid: 0031dba9-e4da-4833-a388-464bea70de19
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - react_hello
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: react_hello_content
+theme: react_hello
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: bb87c2b7-2f6e-425f-9758-538a7e039fa2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thex
+_core:
+  default_config_hash: 0UgBAjq27b8xOmZW6czlpTO2T1Zd3nmTg0UrR-Qfjdc
+id: thex_content
+theme: thex
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: d646785f-fa00-4c5e-972b-e2c22c5af277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_business_id
+  module:
+    - user
+id: user.user.field_business_id
+field_name: field_business_id
+entity_type: user
+bundle: user
+label: 'Business ID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

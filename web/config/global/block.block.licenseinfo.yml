@@ -1,0 +1,27 @@
+uuid: 0befd452-5b25-4afc-8327-d0e382c40f39
+langcode: en
+status: false
+dependencies:
+  module:
+    - dxpr_builder
+    - system
+  theme:
+    - olivero
+id: licenseinfo
+theme: olivero
+region: header
+weight: 0
+provider: null
+plugin: license_info
+settings:
+  id: license_info
+  label: 'DXPR License info'
+  label_display: '0'
+  provider: dxpr_builder
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /admin/people
+      /admin/dxpr_studio/dxpr_builder/user_licenses

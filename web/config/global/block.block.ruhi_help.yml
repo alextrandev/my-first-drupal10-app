@@ -1,0 +1,22 @@
+uuid: 107b9c4c-1c94-461e-849a-b7a9e22a904f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ruhi
+_core:
+  default_config_hash: shyFiIz1w4vot2_W7PjcxaT2JSAxboxfNBrHfLKtPfE
+id: ruhi_help
+theme: ruhi
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
